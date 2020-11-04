@@ -8,17 +8,17 @@ export default defineConfig({
       {
         path: '/',
         name: 'index',
-        component: '@/pages/index/index.vue'
+        component: '@/pages/index/index.vue',
       },
       {
         path: '/home',
         name: 'home',
-        component: '@/pages/home/index.vue'
-      }
-    ]
+        component: '@/pages/home/index.vue',
+      },
+    ],
   },
   nodeModulesTransform: {
     type: 'none',
   },
-  plugins: ['./plugin.ts']
+  plugins: ['mido-umi-plugin-vue'],
 });
